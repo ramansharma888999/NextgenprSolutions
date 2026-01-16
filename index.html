@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NextGen PR Solutions | IT & Digital Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">
+          <img src="assets/images/logo1.png" alt="NextGen PR Solutions Logo" />
+          <span>NextGen PR Solutions</span>
+        </div>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="btn">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Innovative IT Solutions<br />for the Next Generation</h1>
+          <p>
+            NEXTGEN PR SOLUTIONS delivers cutting-edge IT, digital, and
+            technology-driven services to accelerate your business growth.
+          </p>
+          <a href="#services" class="btn-primary">Explore Services</a>
+        </div>
+        <div class="hero-image">
+          <div class="mockup">
+            <img src="assets/images/logo.png" alt="NextGen PR Solutions Logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          NEXTGEN PR SOLUTIONS is a modern IT startup focused on delivering
+          reliable, scalable, and future-ready digital solutions. We help
+          businesses transform ideas into powerful digital experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+          <div class="card">
+            <h3>Web Development</h3>
+            <p>Responsive, secure, and high-performance websites.</p>
+          </div>
+          <div class="card">
+            <h3>Software Solutions</h3>
+            <p>Custom software tailored to your business needs.</p>
+          </div>
+          <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>SEO, branding, and digital growth strategies.</p>
+          </div>
+          <div class="card">
+            <h3>IT Consulting</h3>
+            <p>Expert guidance for digital transformation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-pro" id="contact">
+      <div class="container contact-grid">
+        <!-- LEFT CONTENT -->
+        <div class="contact-left">
+          <span class="tag">Have a query?</span>
+          <h2>Connect with us!</h2>
+
+          <div class="illustration">
+            <!-- optional illustration / SVG -->
+          </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+       <div class="contact-right">
+  <form class="contact-form-pro" onsubmit="sendToWhatsApp(event)">
+    
+    <div class="input-group">
+      <span class="icon">👤</span>
+      <input type="text" id="name" placeholder="Name" required />
+    </div>
+
+    <div class="input-group">
+      <span class="icon">📱</span>
+      <input type="text" id="mobile" placeholder="Mobile" required />
+    </div>
+
+    <div class="input-group">
+      <span class="icon">✉️</span>
+      <input type="email" id="email" placeholder="Email" required />
+    </div>
+
+    <div class="input-group">
+      <span class="icon">💬</span>
+      <textarea id="message" placeholder="Message"></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary full">Submit</button>
+  </form>
+</div>
+
+      </div>
+    </section>
+<script>
+function sendToWhatsApp(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const mobile = document.getElementById("mobile").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappNumber = "919736348878"; // country code + number
+
+    const text =
+`📩 New Contact from Website
+-------------------------
+👤 Name: ${name}
+📱 Mobile: ${mobile}
+✉️ Email: ${email}
+💬 Message: ${message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank");
+}
+</script>
+
+    <!-- CONTACT -->
+    <!-- <form class="contact-form" onsubmit="sendWhatsAppMessage(event)">
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn-primary">Send Message</button>
+</form>
+
+<script>
+function sendWhatsAppMessage(e) {
+    e.preventDefault(); // prevent default form submission
+
+    const userMessage = document.getElementById('message').value;
+
+    // Your WhatsApp number
+    const phone = '917018773697';
+
+    // Your details (auto-included)
+    const name = 'Raman Sharma';
+    const email = 'ramansharma888999@gmail.com';
+
+    // Construct message
+    const text = `Sender Name: ${name}%0AEmail: ${email}%0AMessage: ${userMessage}`;
+
+    // Open WhatsApp
+    const url = `https://wa.me/${phone}?text=${text}`;
+    window.open(url, '_blank');
+}
+</script> -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 NEXTGEN PR SOLUTIONS. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
