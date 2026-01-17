@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
     margin: auto;
 }
 
-/* HEADER */
+
 .header {
     background: #081420;
     position: sticky;
@@ -32,7 +32,7 @@ body {
     padding: 20px 0;
 }
 
-/* LOGO */
+
 .logo {
     display: flex;
     align-items: center;
@@ -67,7 +67,7 @@ nav a {
     color: #000;
 }
 
-/* HERO */
+
 .hero {
     padding: 80px 0;
     background: linear-gradient(135deg, #0b1c2d, #0f2f4f);
@@ -104,35 +104,35 @@ nav a {
 }
 
 
- /* HERO IMAGE WRAPPER */
+ 
 .hero-image {
     flex-shrink: 0;
 }
 
-/* MOCKUP BOX (PARENT) */
+
 .hero-image .mockup {
-    position: relative;                 /* 🔑 parent */
+    position: relative;                 
     width: 340px;
     height: 340px;
     background: linear-gradient(135deg, #000000, #005eff);
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 229, 255, 0.3);
-    overflow: hidden;                   /* 🔑 image bahar nahi jayegi */
+    overflow: hidden;                   
 }
 
-/* IMAGE INSIDE MOCKUP */
+
 .hero-image .mockup img {
-    position: absolute;                 /* 🔑 child */
+    position: absolute;                 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;
     max-height: 80%;
-    object-fit: contain;                /* 🔑 no stretch */
+    object-fit: contain;              
 }
 
 
-/* ABOUT */
+
 .about {
     padding: 60px 0;
     background: #081420;
@@ -143,7 +143,7 @@ nav a {
     margin-bottom: 20px;
 }
 
-/* SERVICES */
+
 .services {
     padding: 60px 0;
 }
@@ -171,7 +171,7 @@ nav a {
     color: #00e5ff;
 }
 
-/* CONTACT PRO */
+
 .contact-pro {
     background: radial-gradient(circle at top right, #0f2f4f, #050e18);
     padding: 90px 0;
@@ -184,7 +184,7 @@ nav a {
     align-items: center;
 }
 
-/* LEFT */
+
 .contact-left .tag {
     background: rgba(0, 229, 255, 0.15);
     color: #00e5ff;
@@ -200,7 +200,7 @@ nav a {
     font-weight: 700;
 }
 
-/* RIGHT FORM */
+
 .contact-form-pro {
     background: rgba(255,255,255,0.02);
     padding: 30px;
@@ -208,7 +208,7 @@ nav a {
     backdrop-filter: blur(10px);
 }
 
-/* INPUT GROUP */
+
 .input-group {
     display: flex;
     align-items: center;
@@ -238,28 +238,28 @@ nav a {
     height: 80px;
 }
 
-/* TWO COL */
+
 .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/* BUTTON */
+
 .btn-primary.full {
     width: 100%;
     margin-top: 20px;
 }
 
 
-/* FOOTER */
+
 .footer {
     background: #000;
     text-align: center;
     padding: 15px 0;
     font-size: 14px;
 }
-/* HEADER BASE */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -267,7 +267,7 @@ nav a {
   height: 72px;
 }
 
-/* MENU TOGGLE (HIDDEN ON DESKTOP) */
+
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -321,4 +321,4 @@ nav a {
   }
 
 
-}
+} */
